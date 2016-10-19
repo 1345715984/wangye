@@ -1,0 +1,122 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-CN">
+<head>
+<title>技能</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="description" content="布尔教育 http://www.itbool.com" />
+<style>
+	body{
+		margin: 0;
+		background: gray;
+	}
+	.container{
+		width: 970px;
+		margin: 0 auto;
+	}
+	.header{
+		height: 250px;
+		background: url(../images/技能.jpg) no-repeat;
+	}
+	.nav{
+		height: 40px;
+		background: url(../images/1.jpg);
+		margin-top: -15px;
+	}
+	.nav ul{
+		list-style:none;
+		font-size: 14px;
+	}
+	.nav li{
+		float: left;
+		width: 80px;
+		text-align: center;
+		line-height: 40px;
+	}
+	.nav li a{
+		text-decoration: none;
+		color: white;
+	}
+	.nav li a:hover{
+		text-decoration: underline;
+		background: orange;
+	}
+	.main{
+		width: 970px;
+		margin: 0 auto;
+		background: #edc;
+}
+.main legend{
+	color: red;
+	font: italic bold 25px/40px "黑体",serif;
+}
+.main img{border: 10px solid white;}
+.footer a{
+	margin-left:450px;	
+	line-height: 100px;
+}
+</style>
+<script type="text/javascript">
+	function get(){
+		var str="疾风骤雨【被动技能】无快捷键<br/>"
+		str+="在李青使用一次技能后，他的下两次攻击会获得40%攻速加成，且分别回复20/10能量。<br/>技能使用心得:<br/>利用被动的攻速和能量恢复，不要只靠技能打伤害";
+		document.getElementById("text").innerHTML=str;
+		document.getElementById("tupian").setAttribute("src","../images/4.gif");
+	}
+	function getQ(){
+		var str="天音波/回音击：【快键键：Q】<br/>"
+		str+="天音波：李青发出刺耳的声波定位敌人，对首个敌人造成物理伤害。如果天音波击中敌人，李青在接下来3秒可施放回音击。<br/>回音击：李青冲向被天音波击中的敌人，造成物理伤害并附加敌人已损失生命值8%的伤害。<br/>技能使用心得<br/>Q技能的准度是盲僧的考量标准，切记不要有必须Q过去的强迫症<br/>";
+		document.getElementById("text").innerHTML=str;
+		document.getElementById("tupian").setAttribute("src","../images/qq.jpg");
+	}
+	function getW(){
+		var str="金钟罩/铁布衫：【快键键：W】<br/>"
+		str+="金钟罩：李青冲向友军，提供护盾保护自己。如果目标友军是英雄，那么李青和目标都会获得护盾。施放金钟罩后3秒内，李青可施放铁布衫。<br/>铁布衫：李青高强度的训练让他在战斗中激发潜能。李青可以在5秒内获得额外生命偷取和法术吸血。<br/>技能使用心得:<br/>W技能是给盲僧操作空间的手段，二段W的回复保证续航，瞬间插眼W是基本功";
+		document.getElementById("text").innerHTML=str;
+		document.getElementById("tupian").setAttribute("src","../images/ww.jpg");
+	}
+	function getE(){
+		var str="天雷破/摧筋断骨：【快键键：E】<br/>"
+		str+="天雷破：李青撞击地面，施放冲击波，造成魔法伤害，并显示被击中单位的视野。如果天雷破击中敌人，李青可以在接下来的3秒内施放摧筋断骨。<br/>摧筋断骨：李青致残被天雷破侦查到的敌人，减少敌人的移动速度，持续4秒。持续期间受影响单位的移动速度会逐渐恢复正常。<br/>技能使用心得:<br/>E技能是盲僧留人的技能，魔法的伤害对于堆护甲的对手也能造成不俗的伤害";
+		document.getElementById("text").innerHTML=str;
+		document.getElementById("tupian").setAttribute("src","../images/ee.jpg");
+	}
+	function getR(){
+		var str="猛龙摆尾：【快键键：R】<br/>"
+		str+="李青用强力的回旋踢击退敌方英雄，对目标以及被目标撞到的任何敌人造成物理伤害。 被目标撞到的敌人会被短暂击飞。这项技艺是春哥教他的，不过李青不能将玩家的英雄踢到地图外面去。<br/>技能使用心得:<br/>盲僧的大招可以对所有击中的目标造成伤害，必要时可以用它踢飞对面威胁人物";
+		document.getElementById("text").innerHTML=str;
+		document.getElementById("tupian").setAttribute("src","../images/rr.jpg");
+	}
+</script>
+</head>
+    <body>
+    	<div class="container">
+    		<div class="header"></div>
+			<div class="nav">
+				<ul>
+					<li><a href="../盲僧主页.html">主页</a></li>
+					<li><a href="技巧.html">技巧</a></li>
+					<li><a href="技能.html">技能</a></li>
+					<li><a href="排行榜.html">排行榜</a></li>
+					<li><a href="联系作者.html">联系作者</a></li>
+				</ul>
+			</div>
+    	</div>
+    	<div class="main">
+    		<fieldset>
+    		<legend>技能：</legend>
+    			<figure>
+    				<input type="image" src="../images/被动.gif" onclick="get()"/>
+    				<input type="image" src="../images/q.gif" onclick="getQ()"/>
+    				<input type="image" src="../images/w.gif" onclick="getW()"/>
+    				<input type="image" src="../images/e.gif" onclick="getE()"/>
+    				<input type="image" src="../images/r.gif" onclick="getR()"/>
+    			</figure>
+    			<div id="text"></div>
+    			<img id="tupian" src="../images/4.gif" alt="moren" />
+    		</fieldset>
+    		<div class="footer">
+			<a href="http://lol.178.com/champion/leesin/">更多精彩内容</a>
+			</div>
+    	</div>
+    </body>
+</html>

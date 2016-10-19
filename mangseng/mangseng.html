@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+	<meta charset="UTF-8">
+	<title>盲僧主页</title>
+	<link rel="stylesheet" href="style.css">
+	<script type="text/javascript">
+		window.onload=function (){
+			var oDiv=document.getElementById('div1');
+			var oUl=oDiv.getElementsByTagName('ul')[0];
+			var aLi=oUl.getElementsByTagName('li');
+	
+			oUl.innerHTML=oUl.innerHTML+oUl.innerHTML;
+			oUl.style.width=aLi[0].offsetWidth*aLi.length+'px';
+	
+			var timer=setInterval(function (){
+				if(oUl.offsetLeft<-oUl.offsetWidth/2)
+				{
+					oUl.style.left='0';
+				}
+				if(oUl.offsetLeft>0)
+				{
+					oUl.style.left=-oUl.offsetWidth/2+'px';
+				}
+				oUl.style.left=oUl.offsetLeft+2+'px';
+			}, 30);
+		};
+	</script>
+</head>
+<body>
+	<div class="page">
+		<div class="banner"></div>
+		<div class="nav">
+			<ul>
+				<li><a href="盲僧主页.html">主页</a></li>
+				<li><a href="html/技巧.html">技巧</a></li>
+				<li><a href="html/技能.html">技能</a></li>
+				<li><a href="html/排行榜.html">排行榜</a></li>
+				<li><a href="html/联系作者.html">联系作者</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="main">
+		<fieldset>
+    		<legend>英雄概述：</legend>
+    		<p>盲僧,别名瞎子,李青,盲僧。盲僧作为常驻的神级打野，打野效率和gank能力都非常优秀，可以说是打野英雄中的代表人物。你可以查看<a href="html/技巧.html">使用他的小技巧</a>，或者<a href="html/技能.html">熟悉他的技能</a>。英雄本身在前期也很强势，唯一缺点就是后期较为乏力。查看<a href="html/排行榜.html">打野排行榜</a>，有任何疑问请<a href="html/联系作者.html">联系作者</a>。
+    		</p>
+    	</fieldset>	
+    	<fieldset>
+    		<legend>英雄属性</legend>
+    		<p>生命力：<progress class="shengming" max="10" value="5"></progress></p>
+    		<p>物理攻击：<progress id="2" max="10" value="8"></progress></p>
+    		<p>法术攻击：<progress id="3" max="10" value="3"></progress></p>
+    		<p>上手难度：<progress id="4" max="10" value="6"></progress></p>
+    	</fieldset>
+    	<fieldset>
+    		<legend>视频集锦</legend>
+	    	<video src="sucai2.mov" loop controls="controls" width="500" height="400" poster="images/5.jpg">
+			你的浏览器不支持video
+			</video>
+
+		</fieldset>
+
+		<div id="div1">
+			<ul>
+		    	<li><img src="images/11.jpg" /></li>
+		    	<li><img src="images/22.jpg" /></li>
+		    	<li><img src="images/33.jpg" /></li>
+		    	<li><img src="images/44.jpg" /></li>
+		    	<li><img src="images/55.jpg" /></li>
+   			</ul>
+		</div>
+		<div class="footer">
+			<a href="http://lol.178.com/champion/leesin/">更多精彩内容</a>
+		</div>			
+	</div>	
+</body>
+</html>
