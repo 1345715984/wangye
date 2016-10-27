@@ -1,0 +1,258 @@
+*{
+	margin: 0;
+	padding: 0;
+	border: none;
+}
+body{
+		background:white;
+		text-align: center;
+	}
+.page{
+	text-align: center;
+	}
+.header{
+	width: 1000px;
+	height: 40px;
+	position: relative;
+	margin: 15px auto;
+	}
+.header img{
+	margin-right: 10px;
+	float: left;
+}
+.header .headera{
+	width: 144px;
+	height: 28px;
+	background-image: url(images/bg1.png);
+	background-position: 0 -64px;
+	margin-right: 20px;
+	float: left;
+	}
+.nav{
+		list-style:none;
+		}
+.nav a{
+		float: left;
+		font:12px/32px "SimHei",serif;
+		margin-left: 20px; 
+		color: gray;
+		text-decoration: none;  
+		}
+.nav .last{
+	line-height: 32px;
+	float: left;
+}
+.nav a:hover{
+	color:black;
+	text-decoration: underline;
+}
+
+.main{
+	height: 600px;
+	background: orange;
+	position: relative;
+	min-width: 1000px;
+}
+#imgs .bg{
+	height: 600px;
+	background-repeat: no-repeat;/*不重复*/
+	width: 100%;
+	clear: both;/*清除浮动,不然背景边框等的设定没有用，margin值也没有用*/
+    background-position: center top;/*图片居中*/
+    cursor:pointer;
+    display: none;
+}
+		
+		#banner{
+			text-align:center;
+			margin:0 auto; 
+		}
+		#banner ul{
+			position: absolute;list-style-type: none;
+			text-align:center;
+			margin: 0;padding: 0;
+			bottom: 3px;
+			display: inline;
+		}
+		#banner ul li{
+			padding: 0px 8px;
+			float: left;
+			display: block;
+			color: white;
+			border: 1px solid #e5eaff;
+			margin: 5px;
+			background: gray;
+			cursor: pointer;
+		}
+		#banner .active{background: black;}
+
+
+
+
+.main .tab{  
+    width: 295px;
+    height: 460px;
+    padding: 13px 14px 15px;
+    top: 56px;
+    left: 50%;/*两个嵌套的div，里面那个设置left:-50%；那么这个div就只有一半在外面div的里面*/
+    margin-left: 150px;
+    text-align: left;
+    position: absolute;
+    z-index: 2;
+    background-position: -323px 0;
+}
+.main .deng{
+    width: 100%;
+    height: 47px;
+    overflow: hidden;
+    clear: both;
+}
+.main .deng .fun1{
+	padding-left: 15px;
+    width: 132px;
+    border-right: none;
+	float: left;
+}
+.main .deng .fun2{
+	width: 148px;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    line-height: 46px;
+    float: left;
+    font-size: 14px;
+    text-align: center;
+    color: #626262;
+	float: left;
+}
+
+#box{
+		width: 300px;
+		height: 460px;
+		border:1px solid gold;
+		margin: 10px auto;
+		background: url(images/left.png);
+	}
+	#form1{
+		height: 46px;
+		cursor:pointer;	
+	}
+	#left{
+		margin: 25px;
+		float: left;
+
+	}
+	#right{
+		margin: 25px;
+		float: right;
+	}
+	#form2{
+		width: 280px;
+		margin: 20px auto;
+
+	}
+	#tab1{
+		width: 200px;
+		margin:20px auto;
+		clear: both;
+		display: block;
+	}
+	#up{
+		display: block;
+		font: bold 20px/32px "SimHei",serif;
+		text-align: center;
+	}
+	#tab1 img{
+		display: block;
+		margin:20px auto;
+	}
+	#down{
+		display: block;
+		font: bold 10px/32px "SimHei",serif;
+		background: blue;
+		margin:20px auto;
+		text-align: center
+	}
+	#a1{
+		float: left;
+		text-decoration: none;
+	}
+	#a2{
+		float: right;
+		text-decoration: none;
+	}
+
+	#tab2{
+		width: 200px;
+		margin:20px auto;
+		display: none;
+		clear: both;
+	}
+	#first{
+
+	}
+	#email{
+		width: 100%;
+		height: 44px;
+		border: 1px solid black;
+		margin: 10px auto;
+		margin-top: 30px;
+	}
+	#password{
+		width: 100%;
+		height: 44px;
+		border: 1px solid black;
+		margin: 10px auto;
+	}
+	#checkbox{
+		float: left;
+		margin: 20px auto;
+	}
+	#tab2 span{
+		float: left;
+		margin: 20px auto;
+		cursor:pointer;
+	}
+	#a3{
+		float: right;
+		margin: 20px auto;
+		text-decoration: none;
+		cursor:pointer;
+	}
+	#bt1{
+		width: 80px;
+		height: 30px;
+		float: left;
+		cursor:pointer;
+	}
+	#bt2{
+		width: 80px;
+		height: 30px;
+		float: right;
+		cursor:pointer;
+	}
+	#second{
+
+	}
+	#second ul{
+		margin-top: 10px;
+		list-style: none;
+	}
+	#text1{
+		font-size: 10px;
+		float: left;
+	}
+	#text2{
+		font-size: 10px;
+		float: right;
+	}
+	#second ul li select{
+		width: 50px;
+	}
+	#footer img{
+		width: 200px;
+		margin:10px auto;
+	}
+	#a4{
+		text-decoration: none;
+	}

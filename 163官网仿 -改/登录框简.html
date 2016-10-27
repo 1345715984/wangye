@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+	<meta charset="UTF-8">
+	<title>登录框简单</title>
+<style>
+	*{margin: 0;padding: 0;}
+	#box{
+		width: 300px;
+		height: 460px;
+		border:1px solid gold;
+		margin: 10px auto;
+		background: url(images/left.png);
+	}
+	#form1{
+		height: 46px;
+		cursor:pointer;	
+	}
+	#left{
+		margin: 25px;
+		float: left;
+
+	}
+	#right{
+		margin: 25px;
+		float: right;
+	}
+	#form2{
+		width: 280px;
+		margin: 20px auto;
+
+	}
+	#tab1{
+		width: 200px;
+		margin:20px auto;
+		clear: both;
+		display: block;
+	}
+	#up{
+		display: block;
+		font: bold 20px/32px "SimHei",serif;
+		text-align: center;
+	}
+	#tab1 img{
+		display: block;
+		margin:20px auto;
+	}
+	#down{
+		display: block;
+		font: bold 10px/32px "SimHei",serif;
+		background: blue;
+		margin:20px auto;
+		text-align: center
+	}
+	#a1{
+		float: left;
+		text-decoration: none;
+	}
+	#a2{
+		float: right;
+		text-decoration: none;
+	}
+
+	#tab2{
+		width: 200px;
+		margin:20px auto;
+		display: none;
+		clear: both;
+	}
+	#first{
+
+	}
+	#email{
+		width: 100%;
+		height: 44px;
+		border: 1px solid black;
+		margin: 10px auto;
+		margin-top: 30px;
+	}
+	#password{
+		width: 100%;
+		height: 44px;
+		border: 1px solid black;
+		margin: 10px auto;
+	}
+	#checkbox{
+		float: left;
+		margin: 20px auto;
+	}
+	#tab2 span{
+		float: left;
+		margin: 20px auto;
+		cursor:pointer;
+	}
+	#a3{
+		float: right;
+		margin: 20px auto;
+		text-decoration: none;
+		cursor:pointer;
+	}
+	#bt1{
+		width: 80px;
+		height: 30px;
+		float: left;
+		cursor:pointer;
+	}
+	#bt2{
+		width: 80px;
+		height: 30px;
+		float: right;
+		cursor:pointer;
+	}
+	#second{
+
+	}
+	#second ul{
+		margin-top: 10px;
+		list-style: none;
+	}
+	#text1{
+		font-size: 10px;
+		float: left;
+	}
+	#text2{
+		font-size: 10px;
+		float: right;
+	}
+	#second ul li select{
+		width: 50px;
+	}
+	#footer img{
+		width: 200px;
+		margin:10px auto;
+	}
+	#a4{
+		text-decoration: none;
+	}
+</style>
+<script>
+	window.onload=function(){
+		var oDiv1=document.getElementById('left');
+		var oDiv2=document.getElementById('right');
+		var oDiv3=document.getElementById('tab1');
+		var oDiv4=document.getElementById('tab2');
+		var oDiv5=document.getElementById('box');
+
+		oDiv1.onmouseover=function(){
+			oDiv3.style.display='block';
+			oDiv4.style.display='none';
+			oDiv5.style.background='url(images/left.png)';
+		};
+		oDiv2.onmouseover=function(){
+			oDiv4.style.display='block';
+			oDiv3.style.display='none';
+			oDiv5.style.background='url(images/right.png)';
+		};
+	};
+</script>
+</head>
+<body>
+	<div id="box">
+		<div id="form1">
+			<div id="left">二维码登录</div>
+			<div id="right">账号密码登录</div>
+		</div>
+		<div id="form2">
+			<div id="tab1">
+				<span id="up">手机扫描&nbsp安全防盗</span>
+				<img src="images/applog.png">
+				<span id="down">使用邮箱大师扫描二维码登录</span>
+				<a id="a1" href="">如何使用</a>
+				&nbsp|
+				<a id="a2" href="">下载邮箱大师</a>
+			</div>
+			<div id="tab2">
+				<div id="first">
+					<input type="email" id="email" placeholder="邮箱账号或手机号">
+					<input type="password" id="password" placeholder="密码">
+					<input type="checkbox" id="checkbox" value="">
+					<span title="为了您的信息安全，请不要在网吧或公用电脑上使用此功能！">十天内免登陆</span>
+					<a id="a3" href="">忘记密码</a>
+					<input id="bt1" type="button" value="登录">
+					<input id="bt2" type="button" value="去注册">
+					<div style="clear:both;"></div>
+				</div>
+				<div id="second">
+					<ul>
+						<li id="text1">版本:<select name="" id="">
+							<option>默认版本</option>
+							<option>网易6.0版本</option>
+							<option>6.0简约版本</option>
+						</select></li>
+						<li id="text2">正使用SSL登录</li>
+					</ul>
+					<div id="footer">
+						<a href=""><img src="images/logo3.png" alt=""></a>
+					</div>
+					<div style="margin-top:10px;font-size:10px">
+						<a id="a4" href="">十月必买好物TOP推荐</a>
+						<br>
+						<a id="a4" href="">职场人的一天>></a>
+					<div style="clear:both;"></div>
+					</div>	
+					<div style="clear:both;"></div>
+				</div>
+			</div>	
+		</div>
+	</div>
+</body>
+</html>

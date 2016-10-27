@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+	<meta charset="UTF-8">
+	<title>163官网</title>
+<link rel="stylesheet" href="style.css">
+<script>
+	window.onload=function(){
+		var oDiv1=document.getElementById('left');
+		var oDiv2=document.getElementById('right');
+		var oDiv3=document.getElementById('tab1');
+		var oDiv4=document.getElementById('tab2');
+		var oDiv5=document.getElementById('box');
+
+		var oDiv6=document.getElementById('imgs');
+		var oDiv7=document.getElementById('banner');	
+		var aImg=oDiv6.getElementsByTagName('img');
+		var aLi=oDiv7.getElementsByTagName('li');
+
+
+		oDiv1.onmouseover=function(){
+			oDiv3.style.display='block';
+			oDiv4.style.display='none';
+			oDiv5.style.background='url(images/left.png)';
+		};
+		oDiv2.onmouseover=function(){
+			oDiv4.style.display='block';
+			oDiv3.style.display='none';
+			oDiv5.style.background='url(images/right.png)';
+		};
+			
+		for (var i = 0; i < aLi.length; i++) {
+				aLi[i].index=i;//自定义一个属性
+				aLi[i].onclick=function(){
+					for (var i = 0; i < aLi.length; i++) {
+						aLi[i].className='';//全部变得没有样式
+						aImg[i].style.display="none";
+					}
+					this.className='active';//this当前的按钮，点击的按钮添加样式
+					aImg[this.index].style.display='block';
+				};
+			}
+	};
+</script>
+</head>
+<body>
+	<div class="page">
+		<div class="header">
+			<img src="images/163logo.gif">	
+			<a class="headera" href="" target="_blank" title="走近网易免费邮箱"></a>
+			<ul class="nav">
+				<li><a href="">邮箱黄页</a></li>
+				<li><a href="">企业邮箱</a></li>
+				<li><a href="">VIP邮箱</a></li>
+				<li><a href="">国外用户登录</a></li>
+				<li><a href="">手机客户端</a></li>
+				<li><a href="">帮助</a></li>
+				<li><a href="">登录反馈</a></li>
+				<span class="last">&nbsp|</span>
+				<li><a href="" class="last">呼叫小易</a></li>
+			</ul>
+		</div>
+		<div class="main">
+				<div id="imgs">
+					<img class="bg" src="images/promPic1.jpg" alt="" style="display:block;">
+					<img class="bg" src="images/promPic2.jpg" alt="">
+					<img class="bg" src="images/promPic3.jpg" alt="">
+					<img class="bg" src="images/promPic4.jpg" alt="">
+					<img class="bg" src="images/promPic5.jpg" alt="">
+				</div>
+				<div id="banner">
+					<ul>
+						<li class="active">1</li>
+						<li>2</li>
+						<li>3</li>
+						<li>4</li>
+						<li>5</li>
+					</ul>
+				</div>
+			<div class="tab">
+				<div id="box">
+					<div id="form1">
+					<div id="left">二维码登录</div>
+					<div id="right">账号密码登录</div>
+					</div>
+					<div id="form2">
+					<div id="tab1">
+						<span id="up">手机扫描&nbsp安全防盗</span>
+						<img src="images/applog.png" style="display:block;">
+						<span id="down">使用邮箱大师扫描二维码登录</span>
+						<a id="a1" href="">如何使用</a>
+						&nbsp|
+						<a id="a2" href="">下载邮箱大师</a>
+					</div>
+					<div id="tab2">
+						<div id="first">
+							<input type="email" id="email" placeholder="邮箱账号或手机号">
+							<input type="password" id="password" placeholder="密码">
+							<input type="checkbox" id="checkbox" value="">
+							<span title="为了您的信息安全，请不要在网吧或公用电脑上使用此功能！">十天内免登陆</span>
+							<a id="a3" href="">忘记密码</a>
+							<input id="bt1" type="button" value="登录">
+							<input id="bt2" type="button" value="去注册">
+							<div style="clear:both;"></div>
+						</div>
+						<div id="second">
+							<ul>
+								<li id="text1">版本:<select name="" id="">
+									<option>默认版本</option>
+									<option>网易6.0版本</option>
+									<option>6.0简约版本</option>
+								</select></li>
+								<li id="text2">正使用SSL登录</li>
+							</ul>
+							<div id="footer">
+								<a href=""><img src="images/logo3.png" alt=""></a>
+							</div>
+							<div style="margin-top:10px;font-size:10px">
+								<a id="a4" href="">十月必买好物TOP推荐</a>
+								<br>
+								<a id="a4" href="">职场人的一天>></a>
+								<div style="clear:both;"></div>
+							</div>	
+							<div style="clear:both;"></div>
+						</div>
+					</div>	
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
